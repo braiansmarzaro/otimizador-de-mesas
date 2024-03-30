@@ -1,0 +1,5 @@
+/.pytest_cache
+/list.csv
+/modelling.py
+/test.csv
+/__pycache__
