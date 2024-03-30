@@ -21,7 +21,7 @@ if uploaded_file is not None:
 if st.button("Solve"):
     st.subheader('Resultados')
     solver.solve()
-    for e,s in solver.resultados():
+    for e,s in sorted(solver.resultados(),key=lambda x: (x[1],x[0])):
         st.write(f'A(o) estudante {s} se sentará com a(o) empresária(o) {e}.')
     
     insatisfeitos = solver.resultados_negativos()
